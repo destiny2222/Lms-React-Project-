@@ -1,10 +1,29 @@
+import { Link } from 'react-router-dom';
 import img1 from '../../assets/image/blog-1.jpg';
 import img2 from '../../assets/image/blog-2.jpg';
 import img3 from '../../assets/image/blog-3.jpg';
 import img4 from '../../assets/image/blog-4.jpg';
-import { Link } from 'react-router-dom';
+import google from "../../assets/image/logos_google.png";
+import skill  from '../../assets/image/skill-icons_aws-dark.png';
+import art from '../../assets/image/image 6.png';
+import edo from '../../assets/image/logo/logo.png';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 
 const Home = () => {
+
+    const settings = {
+        infinite: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        lazyLoad: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    };
     return ( 
         <main>
             {/* hero section */}
@@ -352,7 +371,20 @@ const Home = () => {
                             <p>Here are the stakeholders working with us to create impact in the south-south</p>
                         </div>
                         <div className='col-12 col-xl-5 col-md-12 col-lg-5 col-sm-12'>
-                            
+                            <Slider {...settings}>
+                                <div>
+                                  <img src={google}  width={200} height={200}/>
+                                </div>
+                                <div>
+                                  <img src={skill} width={200} height={200} />
+                                </div>
+                                <div>
+                                   <img src={art} />
+                                </div>
+                                <div>
+                                  <img src={edo} width={200} height={200} />
+                                </div>
+                            </Slider>
                         </div>
                     </div>
                 </div>

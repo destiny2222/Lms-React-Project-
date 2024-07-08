@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Navbar />
         <div className='content-body'>
-          <Home />
+          <Home  />
         </div>
         <Footer />
       </Router>
