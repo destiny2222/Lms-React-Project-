@@ -24,7 +24,7 @@ const Navbar = () => {
                 
                 <div className='links'>
                     <a href='#' className='btn btn-theme-1'>Become an instructor</a>
-                    <a href='#' className='btn btn-theme'>Log in</a>
+                    <a href='/login' className='btn btn-theme'>Log in</a>
                     <a href='#' className='btn btn-theme-color'>Sign up</a>
                 </div>
             </div>

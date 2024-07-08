@@ -531,6 +531,27 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    .partner-section .thumb-img {
+        /* margin-right: 130px !important; */
+    }
+}
+
+
+/* Login  */
+.login-section .Social-media{
+    padding: 10px 150px 10px 120px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    border: 2px solid #374C51;
+    display: inline-block;
+    margin: auto  13%;
+}
+
+.login-section  a{
+    text-decoration: none;
+}
 
 
 /* footer */

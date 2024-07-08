@@ -1,3 +1,5 @@
+// export default Home;
+import React from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../../assets/image/blog-1.jpg';
 import img2 from '../../assets/image/blog-2.jpg';
@@ -13,8 +15,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-const Home = () => {
 
+const Home = () => {
     const settings = {
         infinite: true,
         dots: false,
@@ -42,7 +44,7 @@ const Home = () => {
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
               },
             },
             {
@@ -391,7 +393,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            {/* partner section */}
             <section className='partner-section pt-50 pb-50 '>
                 <div className='container'>
                     <div className='row align-items-center justify-content-center'>
@@ -421,9 +423,7 @@ const Home = () => {
                 </div>
             </section>
         </main>
-
-
-    );
+    )
 }
- 
-export default Home;
+
+export default Home
