@@ -20,10 +20,27 @@ const login = () => {
                         <div className='col-md-6'>
                             <div className='login-text text-center'>
                               <h2>Welcome Back</h2>
-                              <p>New to our platform? <Link to="#">Sign Up</Link></p>
+                              <p>New to our platform? <Link to="#" className='signup'>Sign Up</Link></p>
                             </div>
                             <div className='Social-media text-center'>
-                                <Link to="#"><img src={google} width={20} className=' me-2' alt="google" />  Sign In With Google</Link>
+                                <Link to="#"><img src={google} width={20} className='p-0 me-2' alt="google" />  Sign In With Google</Link>
+                            </div>
+                            <div className='line mb-5'></div>
+
+                            <div className='row'>
+                                <form action='' method='post'>
+                                    <div className='form-group mb-4'>
+                                        <label For='email' className='pb-3'>Email or Phone number</label>
+                                        <input type='email' id='email' className='form-control' required />
+                                    </div>
+                                    <div className='form-group mb-4'>
+                                        <label For='password' className='pb-3'>Password </label>
+                                        <div className='input-group'>
+                                         <span class="input-group-text" id="basic-addon1"><i className='fa fa-lock'></i></span>
+                                         <input type='password' id='password' className='form-control' aria-describedby="basic-addon1" required />
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div className='col-md-6'>

@@ -553,6 +553,38 @@
     text-decoration: none;
 }
 
+.login-section .login-text p{
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #6B7C80;
+}
+
+.login-section .login-text .signup{
+    color: var(--primary);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.login-section .Social-media a{
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #374C51;
+    text-align: center;
+}
+
+
+.login-section .line{
+    width: 65%;
+    margin-top: 30px;
+    margin: 30px  14% 10px;
+    border:2px solid #E5EAEB;
+}
 
 /* footer */
 .footer{
