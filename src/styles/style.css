@@ -511,6 +511,15 @@
     color: #6B7C80;
 }
 
+.slider-container{
+    overflow: hidden;
+}
+
+
+.partner-section .thumb-img{
+    margin: 5px !important;
+}
+
 @media only screen and (min-width: 1400px) {
     .partner-section .title{
         inline-size: 250px;

@@ -17,12 +17,41 @@ const Home = () => {
 
     const settings = {
         infinite: true,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        dots: false,
+        slidesToShow: 2,
+        slidesToScroll:2,
         lazyLoad: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        nextArrow: (
+            <div>
+              <div className="next-slick-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+              </div>
+            </div>
+          ),
+      
+          prevArrow: (
+            <div>
+              <div className="next-slick-arrow rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+              </div>
+            </div>
+          ),
+          responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+          ]
     };
     return ( 
         <main>
@@ -363,28 +392,30 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='partner-section pt-50 pb-50'>
+            <section className='partner-section pt-50 pb-50 '>
                 <div className='container'>
-                    <div className='row'>
+                    <div className='row align-items-center justify-content-center'>
                         <div className='col-12 col-xl-5 col-md-12 col-lg-5 col-sm-12'>
                             <h2 className='title'>Who Will You Learn With?</h2>
                             <p>Here are the stakeholders working with us to create impact in the south-south</p>
                         </div>
-                        <div className='col-12 col-xl-5 col-md-12 col-lg-5 col-sm-12'>
-                            <Slider {...settings}>
-                                <div>
-                                  <img src={google}  width={200} height={200}/>
-                                </div>
-                                <div>
-                                  <img src={skill} width={200} height={200} />
-                                </div>
-                                <div>
-                                   <img src={art} />
-                                </div>
-                                <div>
-                                  <img src={edo} width={200} height={200} />
-                                </div>
-                            </Slider>
+                        <div className='col-12 col-xl-7 col-md-12 col-lg-7 col-sm-12'>
+                            <div className="slider-container">
+                                <Slider {...settings}>
+                                    <div className='thumb-img'>
+                                    <img src={google}  width={150} height={150}/>
+                                    </div>
+                                    <div className='thumb-img'>
+                                    <img src={skill} width={150} height={150} />
+                                    </div>
+                                    <div className='thumb-img'>
+                                    <img src={art} width={150} height={150}/>
+                                    </div>
+                                    <div className='thumb-img'>
+                                    <img src={edo} width={150} height={150} />
+                                    </div>
+                                </Slider>
+                            </div>
                         </div>
                     </div>
                 </div>
