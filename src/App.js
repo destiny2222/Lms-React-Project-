@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Login from './pages/frontend/Login';
 import { Route, Routes } from 'react-router-dom';
 import Main from './components/Main/Main';
+import Signup from './pages/frontend/Signup';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route  path="/*" element={<Main />} />
         <Route  path="/login" element={<Login />} />
+        <Route  path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );

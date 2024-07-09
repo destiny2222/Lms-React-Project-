@@ -1,26 +1,22 @@
-import { useState } from 'react';
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/image/logo/logo.png';
 import google from '../../assets/image/icon/logo-google.png';
-import img1 from '../../assets/image/login-img.png';
 
-const Login = () => {
+
+const Signup = () => {
     const [passwordType, setPasswordType] = useState('password');
-
     const togglePasswordVisibility = (setter, currentType) => {
         setter(currentType === 'password' ? 'text' : 'password');
     };
-
-    return (
-        <main>
+  return (
+    <main>
             <section className="login-section">
                 <div className="container-fluid mb-5 mb-lg-1">
                     <div className="row">
                         <div className="col-md-12 text-start pt-3">
                             <div className="login-logo">
-                                <Link to="/">
-                                   <img src={logo} className='img-fluid' width={150} alt="logo" />
-                                </Link>
+                                <img src={logo} className='img-fluid' width={150} alt="logo" />
                             </div>
                         </div>
                     </div>
@@ -76,7 +72,7 @@ const Login = () => {
                 </div>
             </section>
         </main>
-    );
+  )
 }
 
-export default Login;
+export default Signup
