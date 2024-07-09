@@ -23,9 +23,9 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                    <div className='d-flex flex-lg-row flex-column align-items-center justify-content-center'>
-                        <div className=''>
+                <div className="container pt-5 pb-5">
+                    <div className='d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5'>
+                        <div className='flex-basis50 flex-lg-basis30'>
                             <div className='login-text text-center'>
                                 <h2>Welcome Back</h2>
                                 <p>New to our platform? <Link to="#" className='signup'>Sign Up</Link></p>
@@ -54,16 +54,19 @@ const Login = () => {
                                     <div className='forgot-password'>
                                        <Link to="#" className=''>Forgot Password?</Link>           
                                     </div>
-                                    <div className='text-center mt-4'>
+                                    <div className='btn-button pt-4'>
                                        <input type='submit' value='Login' className='btn btn-primary  ' />
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div className=' d-none d-md-block'>
+                        <div className='flex-basis50 d-none d-md-block'>
                             <div className='login-img position-relative'>
                                 <div className='content position-absolute bottom-0 start-0 p-3'>
-                                    <p>lorem</p>
+                                    <p>
+                                    “The tallest trees sometimes grow from the smallest seeds”
+                                    </p>
+                                    <span>---- Matshona Dhliwayo</span>
                                 </div>
                             </div>
                         </div>
