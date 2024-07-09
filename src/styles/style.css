@@ -539,14 +539,18 @@
 
 
 /* Login  */
+
+.login-section .form{
+    width:500px;
+    margin: 0px auto;
+}
 .login-section .Social-media{
-    padding: 10px 150px 10px 120px;
-    gap: 8px;
+    padding: 10px 100px 10px 100px;
     border-radius: 8px;
     border: 1px 0px 0px 0px;
     border: 2px solid #374C51;
-    display: inline-block;
-    margin: auto  13%;
+    margin:0px auto;
+    display: table;
 }
 
 .login-section  a{
@@ -581,9 +585,96 @@
 
 .login-section .line{
     width: 65%;
-    margin-top: 30px;
-    margin: 30px  14% 10px;
+    margin: 20px  auto  0px;
     border:2px solid #E5EAEB;
+}
+
+form label{
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #112428;
+}
+
+form input{
+    /* padding: 50px 16px 50px 16px; */
+    border-radius: 8px;
+    border: 1px solid #E5EAEB;
+    background-color: #E5EAEB;
+}
+
+form  input[type="password"]{
+   border-top-right-radius:8px !important;
+   border-bottom-right-radius:8px  !important;
+}
+
+form .forgot-password{
+    text-align: end;
+}
+
+form .forgot-password a{
+    color: var(--primary);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.form .btn-primary{
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    width:437px;
+    padding: 10px, 20px, 10px, 20px;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+}
+
+.login-section .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.login-section .lock{
+    /* background-color: #E5EAEB; */
+}
+
+.login-section .eye-slash{
+    z-index: 111;
+}
+
+
+.login-img{
+    position: relative;
+    background-image: url("../assets/image/login-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.content{
+    z-index: 222;
+}
+
+@media only screen and (max-width:768px) {
+    .login-section .Social-media {
+        padding: 10px 60px 10px 40px;
+    }
+    .login-section .Social-media a{
+        font-size: 11px;
+    }
+    .login-section .form{
+        width:auto;
+    }
+
+    .form .btn-primary{
+        width: 290px;
+    }
 }
 
 /* footer */
