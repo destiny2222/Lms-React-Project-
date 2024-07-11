@@ -30,7 +30,7 @@ const Login = () => {
                         <div className='flex-basis50 flex-lg-basis30'>
                             <div className='login-text text-center'>
                                 <h2>Welcome Back</h2>
-                                <p>New to our platform? <Link to="#" className='signup'>Sign Up</Link></p>
+                                <p>New to our platform? <Link to="/signup" className='signup'>Sign Up</Link></p>
                             </div>
                             <div className='Social-media text-center'>
                                 <Link to="#"><img src={google} width={20} className='p-0 me-2' alt="google" />  Sign In With Google</Link>

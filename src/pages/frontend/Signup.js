@@ -26,15 +26,25 @@ const Signup = () => {
                         <div className='flex-basis50 flex-lg-basis30'>
                             <div className='login-text text-center'>
                                 <h2>Welcome Back</h2>
-                                <p>New to our platform? <Link to="#" className='signup'>Sign Up</Link></p>
+                                <p>Already have an account? <Link to="/login" className='signup'>Log in</Link></p>
                             </div>
                             <div className='Social-media text-center'>
-                                <Link to="#"><img src={google} width={20} className='p-0 me-2' alt="google" />  Sign In With Google</Link>
+                                <Link to="#"><img src={google} width={20} className='p-0 me-2' alt="google" />  Sign Up  With Google</Link>
                             </div>
                             <div className='line mb-5'></div>
 
                             <div className='row'>
                                 <form className='form' action='' method='post'>
+                                    <div className='form-group row mb-4'>
+                                        <div className='col-md-6'>
+                                            <label htmlFor='firstname' className='pb-3'>First Name</label>
+                                            <input type='text' id='firstname' className='form-control' required />
+                                        </div>
+                                        <div className='col-md-6'>
+                                            <label htmlFor='lastname' className='pb-3'>Last Name</label>
+                                            <input type='text' id='lastname' className='form-control' required />
+                                        </div>
+                                    </div>
                                     <div className='form-group mb-4'>
                                         <label htmlFor='email' className='pb-3'>Email or Phone number</label>
                                         <input type='email' id='email' className='form-control' required />
@@ -49,11 +59,12 @@ const Signup = () => {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className='forgot-password'>
-                                       <Link to="#" className=''>Forgot Password?</Link>           
+                                    <div className='py-2'>
+                                        <input type='checkbox' id='checkbox' className='me-2' /> 
+                                        <label htmlFor="checkbox" id='checkbox'>By signing up, you agree to our <Link to="#" className='signup'>Terms & Conditions</Link> and <Link to="#" className='signup'>Privacy Policy</Link></label> 
                                     </div>
                                     <div className='btn-button pt-4'>
-                                       <input type='submit' value='Login' className='btn btn-primary  ' />
+                                       <input type='submit' value='Create Account' className='btn btn-primary  ' />
                                     </div>
                                 </form>
                             </div>

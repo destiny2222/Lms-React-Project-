@@ -682,6 +682,13 @@ form .btn-button{
 }
 
 
+#checkbox, #checkbox a{
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
 
 .content span{
     font-family: "Manrope", sans-serif;
