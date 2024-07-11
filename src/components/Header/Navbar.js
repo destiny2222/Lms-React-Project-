@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/image/logo/logo.png';
 import '../../styles/style.css'
 
@@ -8,7 +9,9 @@ const Navbar = () => {
             <div className="navbar">
                 <div className='nav-sub'>
                     <div className="logo">
-                        <img src={logo} alt="logo" className='img-fluid '/>
+                        <Link to='/'>
+                           <img src={logo} alt="logo" className='img-fluid '/>
+                        </Link>
                     </div>
                     <div className='course_category'>
                         <i className='bi bi-grid'></i>
@@ -24,8 +27,8 @@ const Navbar = () => {
                 
                 <div className='links'>
                     <a href='#' className='btn btn-theme-1'>Become an instructor</a>
-                    <a href='/login' className='btn btn-theme'>Log in</a>
-                    <a href='/signup' className='btn btn-theme-color'>Sign up</a>
+                    <a href='/auth/login' className='btn btn-theme'>Log in</a>
+                    <a href='/auth/signup' className='btn btn-theme-color'>Sign up</a>
                 </div>
             </div>
         </header>

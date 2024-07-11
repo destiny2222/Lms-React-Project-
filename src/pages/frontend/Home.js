@@ -345,7 +345,7 @@ const Home = () => {
                                     <p>not sure where to begin or which course to take</p>
                                 </div>
                                 <div className='help-button'>
-                                    <Link to="#" className='btn btn-theme-color'>Signup</Link>
+                                    <Link to="/auth/signup" className='btn btn-theme-color'>Signup</Link>
                                 </div>
                             </div>     
                         </div>  
