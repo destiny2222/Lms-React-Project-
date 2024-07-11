@@ -652,10 +652,26 @@ form .btn-button{
     z-index: 111;
 }
 
+.question-title{
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #112428;
+}
 
 .login-img{
     position: relative;
     background-image: url("../assets/image/login-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border-radius: 8px;
+}
+.question-img{
+    position: relative;
+    background-image: url("../assets/image/question.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -678,7 +694,7 @@ form .btn-button{
     font-family: "Manrope", sans-serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 54px;
+    line-height: 50px;
 }
 
 
