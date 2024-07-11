@@ -28,7 +28,7 @@ const Signup = () => {
                     <div className='flex-basis50 flex-lg-basis30'>
                         <div className='login-text text-center'>
                             <h2>Welcome Back</h2>
-                            <p>Already have an account? <Link to="/login" className='signup'>Log in</Link></p>
+                            <p>Already have an account? <Link to="/auth/login" className='signup'>Log in</Link></p>
                         </div>
                         <div className='Social-media text-center'>
                             <Link to="#"><img src={google} width={20} className='p-0 me-2' alt="google" />  Sign Up  With Google</Link>
