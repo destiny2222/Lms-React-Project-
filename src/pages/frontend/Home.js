@@ -9,6 +9,10 @@ import google from "../../assets/image/logos_google.png";
 import skill  from '../../assets/image/skill-icons_aws-dark.png';
 import art from '../../assets/image/image 6.png';
 import edo from '../../assets/image/logo/logo.png';
+import { HiAcademicCap } from "react-icons/hi2";
+import { HiMiniBuildingLibrary } from "react-icons/hi2";
+import { HiMiniSquaresPlus } from "react-icons/hi2";
+import { HiOutlineBookOpen } from "react-icons/hi2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -95,10 +99,10 @@ const Home = () => {
                                     <div className="col-md-6 col-12 mb-lg-0 mb-4">
                                         <div className="row">
                                             <div className="col-md-12 col-6 mb-4">
-                                            <img src={img2} alt='hero-image'  className='img-fluid'/>
+                                               <img src={img2} alt='hero-image'  className='img-fluid'/>
                                             </div>
                                             <div className="col-md-12 col-6 mb-4">
-                                            <img src={img3} alt="hero-image" className='img-fluid' />
+                                               <img src={img3} alt="hero-image" className='img-fluid' />
                                             </div>
                                         </div>
                                     </div>
@@ -117,44 +121,40 @@ const Home = () => {
                         <div className="col-md-3 col-xl-3 col-6 mb-lg-0 mb-4">
                             <div className='startup-card gap-4'>
                                 <div className='startup-card-icon'>
-                                    <i className="fa fa-user"></i>
+                                    <HiAcademicCap style={{fontSize: "25px"}}/>
                                 </div>
                                 <div className='startup-card-text'>
-                                    <h6>Learn The</h6>
-                                    <h6>Essential Skills</h6>
+                                    <h6>Learn The <br /> Essential Skills</h6>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-3 col-xl-3 col-6 mb-lg-0 mb-4">
                             <div className='startup-card gap-4'>
                                 <div className='startup-card-icon'>
-                                    <i className="fa fa-user"></i>
+                                    <HiMiniBuildingLibrary style={{fontSize: "25px"}}/>
                                 </div>
                                 <div className='startup-card-text'>
-                                    <h6>Learn The</h6>
-                                    <h6>Essential Skills</h6>
+                                    <h6>Earn Certificates <br /> And Degrees</h6>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-3 col-xl-3 col-6 mb-lg-0 mb-4">
                             <div className='startup-card gap-4'>
                                 <div className='startup-card-icon'>
-                                    <i className="fa fa-user"></i>
+                                    <HiOutlineBookOpen style={{fontSize: "25px"}}/>
                                 </div>
                                 <div className='startup-card-text'>
-                                    <h6>Learn The</h6>
-                                    <h6>Essential Skills</h6>
+                                    <h6>Get Ready For <br /> The Next Career</h6>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-3 col-xl-3 col-6 mb-lg-0 mb-4">
                             <div className='startup-card gap-4'>
                                 <div className='startup-card-icon'>
-                                    <i className="fa fa-user"></i>
+                                   <HiMiniSquaresPlus style={{fontSize: "25px"}}/>
                                 </div>
                                 <div className='startup-card-text'>
-                                    <h6>Learn The</h6>
-                                    <h6>Essential Skills</h6>
+                                    <h6>Master At <br /> Different Areas</h6>
                                 </div>
                             </div>
                         </div>

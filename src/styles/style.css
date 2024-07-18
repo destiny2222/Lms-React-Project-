@@ -293,18 +293,27 @@
 }
 
 .startup-section .startup-card-text h6{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     padding-bottom: 0;
     font-family: "Manrope", sans-serif;
     margin-bottom: 0px;
     text-align: left;
+    line-height: 30px;
     color: var(--white-color);
+}
+
+
+@media only screen and (min-width: 1400px){
+    .startup-section .startup-card-text h6{
+        /* inline-size: 150px; */
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .startup-section .startup-card-text h6{
         font-size: 12px;
+        line-height: 20px;
     }
 }
 
